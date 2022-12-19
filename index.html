@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-info w-75">
+      <label>product name</label>
+      <input id="productName" type="text" class="form-control" />
+      <div id="nameAlert" class="alert alert-danger p-2 my-2 d-none">
+        letter shoud be from 2 to 8 letter
+      </div>
+      <label>product price</label>
+      <input id="productPrice" type="number" class="form-control" />
+      <div id="priceAlert" class="alert alert-danger p-2 my-2 d-none">
+        price shoud be from 1 to 100
+      </div>
+      <label>product category</label>
+      <input id="productCataegory" type="text" class="form-control" />
+      <div id="categAlert" class="alert alert-danger p-2 my-2 d-none">
+        category shoud be from 1 to 10 letter
+      </div>
+      <label>product description</label>
+      <textarea id="productDesc" class="form-control"></textarea>
+      <button disabled id="addBtn" class="btn btn-danger float-end my-3">
+        add product
+      </button>
+      <div class="clearfix"></div>
+      <input
+        id="searchInput"
+        type="text"
+        class="form-control my-2"
+        placeholder="search by name ..."
+      />
+      <table class="table">
+        <thead>
+          <th>name</th>
+          <th>price</th>
+          <th>category</th>
+          <th>description</th>
+          <th></th>
+          <th></th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
